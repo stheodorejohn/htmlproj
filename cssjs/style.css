@@ -1,5 +1,37 @@
+@font-face {
+  font-family: 'Cinzel';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/cinzel/v11/8vIU7ww63mVu7gtR-kwKxNvkNOjw-tbnfYPlDX5Z.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+
+
+@font-face {
+  font-family: 'Baloo Bhaijaan 2';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/baloobhaijaan2/v3/zYXwKUwuEqdVGqM8tPDdAA_Y-_bMKo1EhQd2tWxo8TyRSpP_JYs.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Amita';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/amita/v9/HhyaU5si9Om7PTloC_U.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 body {
-	background: #E0FFFF ;
+	//toscroll page
+
+	 //display: grid;
+  //grid-template-columns: auto auto;
 }
 
 .sticky {
@@ -7,8 +39,8 @@ body {
   position: sticky;
 top: 0px;   
   padding: 5px;
-  background-color: #cae8ca;
-  border: 2px solid #4CAF50;
+  //background-color: #cae8ca;
+  //border: 2px solid #4CAF50;
 }
 
 nav ul {
@@ -16,34 +48,38 @@ nav ul {
 
 	margin: 0;
 	padding: 0;
-	//overflow: hidden;
-	background-color: #9AFEFF;
+	overflow: hidden;
+	//background-color: white;
 	display: table;
 	width: 100%;
-	font-family:Bradley Hand, cursive;
-	font-size: 26px;
+	font-family:Amita;
+	font-size: 22px;
+	text-transform: uppercase;
 
-    border: 1px solid #333;
 }
 
 nav li {
 	display: table-cell
 
+
 }
 
 li a {
 	display: block;
-	color: black;
+	 color: #fff;
 	text-align: center;
-	padding: 10px 10px;
+	//padding: 10px 10px;
+	background: #428BCA;
 	text-decoration: none;
-
+  border: 1px solid #0AFFFF;
+  border-radius: 30px;
+  opacity: 1;
 }
 
 li a:hover {
-	background-color: #0AFFFF; 
-
-    border: 1px solid #20B2AA;
+	//background-color: #0AFFFF; 
+ opacity: 0.85;
+    border: 5px solid #20B2AA;
 }  
 
 h2 a {
@@ -71,9 +107,9 @@ article {
 	text-align: justify;
 	margin: 15px;
 	max-width: 95%;
-	font-size: 25px;
+	font-size: 22px;
 	line-height: 40px;
-font-family:Bradley Hand, cursive;
+font-family:'Baloo Bhaijaan 2';
 }
 
 img {
@@ -181,6 +217,41 @@ display: flex;
 
 
 }
+
+
+.map-img {
+	display: block;
+	width: 1000px;
+	height: 800px;
+  padding:15px;
+
+  margin: auto;
+}
+
+
+div.imgpolaroid {
+  width: 25%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+  height: 600px;
+  overflow: hidden;
+  padding: 10px 40px;
+  display: inline-block;
+}
+
+img.imgfile{
+border: 1px solid;
+width: auto;
+}
+
+div.imgcontainer {
+	width: auto;
+	
+  text-align: center; 
+line-height: 1.4;
+}
+
 <!--from codecademy  -->
 
 * {
