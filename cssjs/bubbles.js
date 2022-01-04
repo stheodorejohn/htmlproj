@@ -11,6 +11,7 @@ function Vector(x, y, z) {
 
 function PointCollection() {
   this.mousePos = new Vector(0, 0);
+  this.mousePos = new Vector(-60, -60);
   this.pointCollectionX = 0;
   this.pointCollectionY = 0;
   this.points = [];
@@ -56,7 +57,8 @@ function PointCollection() {
       if (window.reset) {
         this.pointCollectionX = 0;
         this.pointCollectionY = 0;
-        this.mousePos = new Vector(0, 0);
+this.mousePos = new Vector(0, 0);
+
       }
 
       point.draw(bubbleShape, this.pointCollectionX, this.pointCollectionY, reset);
@@ -157,7 +159,8 @@ function updateCanvasDimensions() {
     //edited  old value - 100 to 700
     //height: window.innerHeight/5,
     height: 50,
-    width: window.innerWidth*.9
+    //width: window.innerWidth*.72
+    width: 1000
   });
   canvasWidth = canvas.width();
   //edited actual no plus  +150
@@ -275,9 +278,11 @@ function drawName(name, letterColors) {
   }
 //edited actual value -105 505 working
   for (var j = 0; j < g.length; j++) {
-    g[j].curPos.x = (canvasWidth / 2 - offset / 2) + g[j].curPos.x;
+    //g[j].curPos.x = (canvasWidth / 2 - offset / 2) + g[j].curPos.x;
+    g[j].curPos.x = (15) + g[j].curPos.x;
     g[j].curPos.y = (canvasHeight / 2 - 400) + g[j].curPos.y;
-    g[j].originalPos.x = (canvasWidth / 2 - offset / 2) + g[j].originalPos.x;
+    //g[j].originalPos.x = (canvasWidth / 2 - offset / 2) + g[j].originalPos.x;
+    g[j].originalPos.x = (15 ) + g[j].originalPos.x;
     g[j].originalPos.y = (canvasHeight / 2 - 21) + g[j].originalPos.y;
   }
 

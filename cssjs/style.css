@@ -143,6 +143,32 @@ tfoot {
     color: #fff;
 }
 
+#myCanvas {
+	border:5px  indianred;
+	border-style: dotted solid;
+	border-radius: 30px;
+	  background-color: rgba(0,0,0,.35);
+	   //padding: 40px 40px;
+	height: 50px;
+	//width: 90%;
+	margin-top: 40px;
+}
+
+.banner {
+	height: 500px;  
+display: flex;
+ 
+ //align-items: center;
+  justify-content: center;
+	background-color: greenyellow;
+	background-image: url("../media/banner.jpg");
+  //-webkit-background-size: cover;
+  //-moz-background-size: cover;
+  //-o-background-size: cover;
+	 background-size: cover; 
+
+
+}
 <!--from codecademy  -->
 
 * {
@@ -189,6 +215,3 @@ colorcity {
   transition: background-color 0.2s, color 0.2s;
 }
 
-#mycanvas {
-	width: 200px;
-}
