@@ -2,11 +2,21 @@ body {
 	background: #E0FFFF ;
 }
 
+.sticky {
+
+  position: sticky;
+top: 0px;   
+  padding: 5px;
+  background-color: #cae8ca;
+  border: 2px solid #4CAF50;
+}
+
 nav ul {
 	list-style-type: none;
+
 	margin: 0;
 	padding: 0;
-	overflow: hidden;
+	//overflow: hidden;
 	background-color: #9AFEFF;
 	display: table;
 	width: 100%;
@@ -162,6 +172,8 @@ display: flex;
   justify-content: center;
 	background-color: greenyellow;
 	background-image: url("../media/banner.jpg");
+
+        transition: opacity .5s linear;
   //-webkit-background-size: cover;
   //-moz-background-size: cover;
   //-o-background-size: cover;
