@@ -157,7 +157,7 @@ function updateCanvasDimensions() {
     //edited  old value - 100 to 700
     //height: window.innerHeight/5,
     height: 50,
-    width: window.innerWidth
+    width: window.innerWidth*.9
   });
   canvasWidth = canvas.width();
   //edited actual no plus  +150
