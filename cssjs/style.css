@@ -103,7 +103,7 @@ header {
 	margin-left: 14px;
 }
 
-article {
+article, h2 {
 	text-align: justify;
 	margin: 15px;
 	max-width: 95%;
@@ -218,38 +218,70 @@ display: flex;
 
 }
 
+#map h2{
 
+}
+#mapimage{
+	margin-left: 0 auto;
+	margin 0 auto;
+	display: flex;
+	justify-content: center; 
+}
 .map-img {
-	display: block;
+	display: inline-block;
+	
+	//align-items: center;
+	//left: 20%;
+	//display: flex;
+	//justify-content: center;
+	 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 	width: 1000px;
 	height: 800px;
-  padding:15px;
-
-  margin: auto;
+  padding:auto; 
+  
 }
 
 
 div.imgpolaroid {
-  width: 25%;
+  //width: 20%;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  box-sizing: border-box;
+  width: 31%;
+  height: 20%;
   margin-bottom: 25px;
-  height: 600px;
+  //height: 600px;
   overflow: hidden;
-  padding: 10px 40px;
+  //padding:0 auto;
+  //padding: 10px 40px;
+  margin-right: 20px;
+  //padding-right: 105px;
   display: inline-block;
 }
 
 img.imgfile{
-border: 1px solid;
-width: auto;
+	//border: solid 5px;
+	 width: 100%;
+	 margin-top: -40px;
+margin-left: 30px;
+object-fit: scale-down;
 }
 
 div.imgcontainer {
 	width: auto;
-	
-  text-align: center; 
+	//padding-right: -30px;
+	//margin-right: -70px;
+	//margin-left: 10px;
+	margin: 0px 10px;
+  text-align: justify; 
 line-height: 1.4;
+}
+
+.img_descrip{
+	//border: solid 5px;
+	margin-top: -20px;
 }
 
 <!--from codecademy  -->
