@@ -33,10 +33,17 @@ body {
 	 //display: grid;
   //grid-template-columns: auto auto;
 }
+ 
+p{
+	text-indent: 50px;
 
+line-height: 1.2;
+
+}
 .sticky {
-
+z-index: 1;
   position: sticky;
+
 top: 0px;   
   padding: 5px;
   //background-color: #cae8ca;
@@ -52,7 +59,7 @@ nav ul {
 	//background-color: white;
 	display: table;
 	width: 100%;
-	font-family:Amita;
+	font-family:Amita,Georgia, serif;
 	font-size: 22px;
 	text-transform: uppercase;
 
@@ -96,20 +103,25 @@ figcaption{
   text-align:center;
 
 	font-size: 36px;
-  font-family:Brush Script MT, Brush Script Std;
+  font-family:Brush Script MT, Brush Script Std,Georgia, serif;
 }
 
 header {
 	margin-left: 14px;
 }
 
-article, h2 {
+article {
 	text-align: justify;
 	margin: 15px;
 	max-width: 95%;
 	font-size: 22px;
 	line-height: 40px;
-font-family:'Baloo Bhaijaan 2';
+font-family:'Baloo Bhaijaan 2',Georgia, serif;
+}
+
+h3, h2 ,p  {
+
+font-family:'Baloo Bhaijaan 2',Georgia, serif;
 }
 
 img {
@@ -120,15 +132,21 @@ img {
 }
 
 aside {
-	left: 20px;
-	border: 1px solid black;
-	
-	max-width: 95%;
-	position: relative;
+	//left: 30px;
+	border: 5px solid black;
+
+	 width: 95%;
+
+	//position: relative;
+	//position: sticky ;
 	border-color: #010e80;
-	border-width: 5px;
+	//border-width: 5px;
+	border-style:   double;
 	font-size: 18px;
 }
+ 
+
+ 
 
 footer {
 	position: relative;
@@ -137,7 +155,7 @@ footer {
 	background-color: #16E2F5;
 
 	font-size: 25px;
-font-family:Courier New, monospace;
+font-family:Courier New, monospace,Georgia, serif;
 }
 
 footer p {
@@ -218,17 +236,15 @@ display: flex;
 
 }
 
-#map h2{
-
-}
+ 
 #mapimage{
-	margin-left: 0 auto;
+	//margin-left: 0 auto;
 	margin 0 auto;
 	display: flex;
 	justify-content: center; 
 }
 .map-img {
-	display: inline-block;
+display: inline-block;
 	
 	//align-items: center;
 	//left: 20%;
@@ -242,15 +258,21 @@ display: flex;
   
 }
 
+.faq_ans {
+ 	
+	 margin-top: -30px;
+	 margin-left: 20px;
+}
 
 div.imgpolaroid {
   //width: 20%;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
+  	max-width: 500px;
   box-sizing: border-box;
   width: 31%;
   height: 20%;
+  //border: 3px solid;
   margin-bottom: 25px;
   //height: 600px;
   overflow: hidden;
@@ -264,7 +286,7 @@ div.imgpolaroid {
 img.imgfile{
 	//border: solid 5px;
 	 width: 100%;
-	 margin-top: -40px;
+	// margin-top:  40px;
 margin-left: 30px;
 object-fit: scale-down;
 }
@@ -278,11 +300,16 @@ div.imgcontainer {
   text-align: justify; 
 line-height: 1.4;
 }
+ 
 
 .img_descrip{
 	//border: solid 5px;
-	margin-top: -20px;
+	margin-top : -10px ;
+	margin-bottom: -5px;
 }
+
+
+
 
 <!--from codecademy  -->
 
